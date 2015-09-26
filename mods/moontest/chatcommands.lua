@@ -4,10 +4,10 @@ local homepos = {}
 local function loadhomes()
     local input = io.open(homes_file, "r")
     if input then
-		repeat
+        repeat
             local x = input:read("*n")
             if x == nil then
-            	break
+                break
             end
             local y = input:read("*n")
             local z = input:read("*n")
@@ -54,7 +54,7 @@ minetest.register_chatcommand("sethome", {
         minetest.chat_send_player(name, "Home set!")
         changed = true
         if changed then
-        	local output = io.open(homes_file, "w")
+            local output = io.open(homes_file, "w")
             for i, v in pairs(homepos) do
                 output:write(v.x.." "..v.y.." "..v.z.." "..i.."\n")
             end

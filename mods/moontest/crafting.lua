@@ -37,17 +37,17 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "default:wood",
-	recipe = {
-		{"moontest:tree"},
-	},
+    output = "default:wood",
+    recipe = {
+        {"moontest:tree"},
+    },
 })
 
 minetest.register_craft({
-	output = "default:water_source",
-	recipe = {
-		{"moontest:waterice"},
-	},
+    output = "default:water_source",
+    recipe = {
+        {"moontest:waterice"},
+    },
 })
 
 minetest.register_craft({
@@ -60,34 +60,34 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "moontest:stonebrick 4",
-	recipe = {
-		{"moontest:stone", "moontest:stone"},
-		{"moontest:stone", "moontest:stone"},
-	}
+    output = "moontest:stonebrick 4",
+    recipe = {
+        {"moontest:stone", "moontest:stone"},
+        {"moontest:stone", "moontest:stone"},
+    }
 })
 
 minetest.register_craft({
-	output = "moontest:compressed_dust 3",
-	recipe = {
-		{"moontest:dust", "moontest:dust", "moontest:dust"},
-		{"moontest:dust", "moontest:dust", "moontest:dust"},
-		{"moontest:dust", "moontest:dust", "moontest:dust"},
-	}
+    output = "moontest:compressed_dust 3",
+    recipe = {
+        {"moontest:dust", "moontest:dust", "moontest:dust"},
+        {"moontest:dust", "moontest:dust", "moontest:dust"},
+        {"moontest:dust", "moontest:dust", "moontest:dust"},
+    }
 })
 
 minetest.register_craft({
-	output = "moontest:dust 9",
-	recipe = {
-		{"moontest:compressed_dust", "moontest:compressed_dust", "moontest:compressed_dust"},
-	}
+    output = "moontest:dust 9",
+    recipe = {
+        {"moontest:compressed_dust", "moontest:compressed_dust", "moontest:compressed_dust"},
+    }
 })
 
 minetest.register_craft({
-	output = "moontest:dust 3",
-	recipe = {
-		{"moontest:compressed_dust"},
-	}
+    output = "moontest:dust 3",
+    recipe = {
+        {"moontest:compressed_dust"},
+    }
 })
 
 minetest.register_craft({
@@ -116,33 +116,33 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "moontest:stoneslab 6", -- 4 --> 6 because of stone pressure plates
-	recipe = {
-		{"moontest:stone", "moontest:stone", "moontest:stone"},
-	}
+    output = "moontest:stoneslab 6", -- 4 --> 6 because of stone pressure plates
+    recipe = {
+        {"moontest:stone", "moontest:stone", "moontest:stone"},
+    }
 })
 
 minetest.register_craft({
-	output = "moontest:stonestair 4",
-	recipe = {
-		{"moontest:stone", ""},
-		{"moontest:stone", "moontest:stone"},
-	}
+    output = "moontest:stonestair 4",
+    recipe = {
+        {"moontest:stone", ""},
+        {"moontest:stone", "moontest:stone"},
+    }
 })
 
 minetest.register_craft({
-	output = "moontest:cobbleslab 6",
-	recipe = {
-		{"moontest:cobble", "moontest:cobble", "moontest:cobble"},
-	}
+    output = "moontest:cobbleslab 6",
+    recipe = {
+        {"moontest:cobble", "moontest:cobble", "moontest:cobble"},
+    }
 })
 
 minetest.register_craft({
-	output = "moontest:cobblestair 4",
-	recipe = {
-		{"moontest:cobble", ""},
-		{"moontest:cobble", "moontest:cobble"},
-	}
+    output = "moontest:cobblestair 4",
+    recipe = {
+        {"moontest:cobble", ""},
+        {"moontest:cobble", "moontest:cobble"},
+    }
 })
 
 minetest.register_craft({
@@ -155,260 +155,260 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "moontest:sapling",
-	recipe = {
-		{"default:mese_crystal"},
-		{"default:sapling"},
-	}
+    output = "moontest:sapling",
+    recipe = {
+        {"default:mese_crystal"},
+        {"default:sapling"},
+    }
 })
 
 minetest.register_craft({
-	output = "moontest:helmet",
-	recipe = {
-		{"moontest:lunarium_ingot"},
-		{"default:glass"},
-		{"moontest:lunarium_ingot"},
-	}
+    output = "moontest:helmet",
+    recipe = {
+        {"moontest:lunarium_ingot"},
+        {"default:glass"},
+        {"moontest:lunarium_ingot"},
+    }
 })
 
 minetest.register_craft({
-	output = "moontest:lifesupport",
-	recipe = {
-		{"moontest:lunarium_ingot","moontest:lunarium_ingot" , "moontest:lunarium_ingot"},
-		{"moontest:lunarium_ingot", "default:mese", "moontest:lunarium_ingot"},
-		{"moontest:lunarium_ingot", "moontest:lunarium_ingot", "moontest:lunarium_ingot"},
-	}
+    output = "moontest:lifesupport",
+    recipe = {
+        {"moontest:lunarium_ingot","moontest:lunarium_ingot" , "moontest:lunarium_ingot"},
+        {"moontest:lunarium_ingot", "default:mese", "moontest:lunarium_ingot"},
+        {"moontest:lunarium_ingot", "moontest:lunarium_ingot", "moontest:lunarium_ingot"},
+    }
 })
 
 minetest.register_craft({
-	output = "moontest:spacesuit",
-	recipe = {
-		{"moontest:helmet"},
-		{"moontest:lifesupport"},
-	}
+    output = "moontest:spacesuit",
+    recipe = {
+        {"moontest:helmet"},
+        {"moontest:lifesupport"},
+    }
 })
 
 --Recipe redefinitions for compatibility
 
 --Mesecons
 minetest.register_craft({
-	output = "mesecons_powerplant:power_plant",
-	recipe = {
-		{"group:mesecon_conductor_craftable"},
-		{"group:mesecon_conductor_craftable"},
-		{"moontest:sapling"},
-	}
+    output = "mesecons_powerplant:power_plant",
+    recipe = {
+        {"group:mesecon_conductor_craftable"},
+        {"group:mesecon_conductor_craftable"},
+        {"moontest:sapling"},
+    }
 })
 
 minetest.register_craft({
-	output = "mesecons_blinkyplant:blinky_plant_off 1",
-	recipe = {
-		{"","group:mesecon_conductor_craftable",""},
-		{"","group:mesecon_conductor_craftable",""},
-		{"moontest:sapling","moontest:sapling","moontest:sapling"},
-	}
+    output = "mesecons_blinkyplant:blinky_plant_off 1",
+    recipe = {
+        {"","group:mesecon_conductor_craftable",""},
+        {"","group:mesecon_conductor_craftable",""},
+        {"moontest:sapling","moontest:sapling","moontest:sapling"},
+    }
 })
 
 minetest.register_craft({
-	output = "mesecons_switch:mesecon_switch_off 2",
-	recipe = {
-		{"default:steel_ingot","moontest:cobble","default:steel_ingot"},
-		{"group:mesecon_conductor_craftable","","group:mesecon_conductor_craftable"},
-	}
+    output = "mesecons_switch:mesecon_switch_off 2",
+    recipe = {
+        {"default:steel_ingot","moontest:cobble","default:steel_ingot"},
+        {"group:mesecon_conductor_craftable","","group:mesecon_conductor_craftable"},
+    }
 })
 
 minetest.register_craft({
-	output = "mesecons_walllever:wall_lever_off 2",
-	recipe = {
-	    {"group:mesecon_conductor_craftable"},
-		{"moontest:stone"},
-		{"default:stick"},
-	}
+    output = "mesecons_walllever:wall_lever_off 2",
+    recipe = {
+        {"group:mesecon_conductor_craftable"},
+        {"moontest:stone"},
+        {"default:stick"},
+    }
 })
 
 minetest.register_craft({
-	output = "mesecons_pressureplates:pressure_plate_stone_off",
-	recipe = {
-	    {"moontest:cobble","moontest:cobble"},
-	}
+    output = "mesecons_pressureplates:pressure_plate_stone_off",
+    recipe = {
+        {"moontest:cobble","moontest:cobble"},
+    }
 })
 
 minetest.register_craft({
-	output = "mesecons_button:button_off 2",
-	recipe = {
-		{"group:mesecon_conductor_craftable","moontest:stone"},
-	}
+    output = "mesecons_button:button_off 2",
+    recipe = {
+        {"group:mesecon_conductor_craftable","moontest:stone"},
+    }
 })
 
 minetest.register_craft({
-	output = "mesecons_lightstone:lightstone_gray_off",
-	recipe = {
-		{"","moontest:cobble",""},
-		{"moontest:cobble","default:torch","moontest:cobble"},
-		{"","group:mesecon_conductor_craftable",""}
-	}
+    output = "mesecons_lightstone:lightstone_gray_off",
+    recipe = {
+        {"","moontest:cobble",""},
+        {"moontest:cobble","default:torch","moontest:cobble"},
+        {"","group:mesecon_conductor_craftable",""}
+    }
 })
 
 minetest.register_craft({
-	output = "mesecons_pistons:piston_normal_off 2",
-	recipe = {
-		{"group:wood", "group:wood", "group:wood"},
-		{"moontest:cobble", "default:steel_ingot", "moontest:cobble"},
-		{"moontest:cobble", "group:mesecon_conductor_craftable", "moontest:cobble"},
-	}
+    output = "mesecons_pistons:piston_normal_off 2",
+    recipe = {
+        {"group:wood", "group:wood", "group:wood"},
+        {"moontest:cobble", "default:steel_ingot", "moontest:cobble"},
+        {"moontest:cobble", "group:mesecon_conductor_craftable", "moontest:cobble"},
+    }
 })
 
 minetest.register_craft({
-	output = "mesecons_movestones:movestone 2",
-	recipe = {
-		{"moontest:stone", "moontest:stone", "moontest:stone"},
-		{"group:mesecon_conductor_craftable", "group:mesecon_conductor_craftable", "group:mesecon_conductor_craftable"},
-		{"moontest:stone", "moontest:stone", "moontest:stone"},
-	}
+    output = "mesecons_movestones:movestone 2",
+    recipe = {
+        {"moontest:stone", "moontest:stone", "moontest:stone"},
+        {"group:mesecon_conductor_craftable", "group:mesecon_conductor_craftable", "group:mesecon_conductor_craftable"},
+        {"moontest:stone", "moontest:stone", "moontest:stone"},
+    }
 })
 
 minetest.register_craft({
-	output = 'mesecons_random:removestone 4',
-	recipe = {
-		{"", "moontest:cobble", ""},
-		{"moontest:cobble", "group:mesecon_conductor_craftable", "moontest:cobble"},
-		{"", "moontest:cobble", ""},
-	}
+    output = 'mesecons_random:removestone 4',
+    recipe = {
+        {"", "moontest:cobble", ""},
+        {"moontest:cobble", "group:mesecon_conductor_craftable", "moontest:cobble"},
+        {"", "moontest:cobble", ""},
+    }
 })
 
 minetest.register_craft({
-	output = 'mesecons_random:ghoststone 4',
-	recipe = {
-		{"default:steel_ingot", "moontest:cobble", "default:steel_ingot"},
-		{"moontest:cobble", "group:mesecon_conductor_craftable", "moontest:cobble"},
-		{"default:steel_ingot", "moontest:cobble", "default:steel_ingot"},
-	}
+    output = 'mesecons_random:ghoststone 4',
+    recipe = {
+        {"default:steel_ingot", "moontest:cobble", "default:steel_ingot"},
+        {"moontest:cobble", "group:mesecon_conductor_craftable", "moontest:cobble"},
+        {"default:steel_ingot", "moontest:cobble", "default:steel_ingot"},
+    }
 })
 
 minetest.register_craft({
-	output = "mesecons_delayer:delayer_off_1",
-	recipe = {
-		{"mesecons_torch:mesecon_torch_on", "group:mesecon_conductor_craftable", "mesecons_torch:mesecon_torch_on"},
-		{"moontest:cobble","moontest:cobble", "moontest:cobble"},
-	}
+    output = "mesecons_delayer:delayer_off_1",
+    recipe = {
+        {"mesecons_torch:mesecon_torch_on", "group:mesecon_conductor_craftable", "mesecons_torch:mesecon_torch_on"},
+        {"moontest:cobble","moontest:cobble", "moontest:cobble"},
+    }
 })
 
 --Tools
 
 minetest.register_craft({
-	output = 'moontest:pick_lunarium',
-	recipe = {
-		{'moontest:lunarium_ingot', 'moontest:lunarium_ingot', 'moontest:lunarium_ingot'},
-		{'', 'group:stick', ''},
-		{'', 'group:stick', ''},
-	}
+    output = 'moontest:pick_lunarium',
+    recipe = {
+        {'moontest:lunarium_ingot', 'moontest:lunarium_ingot', 'moontest:lunarium_ingot'},
+        {'', 'group:stick', ''},
+        {'', 'group:stick', ''},
+    }
 })
 
 minetest.register_craft({
-	output = 'moontest:pick_titanium',
-	recipe = {
-		{'moontest:titanium_ingot', 'moontest:titanium_ingot', 'moontest:titanium_ingot'},
-		{'', 'group:stick', ''},
-		{'', 'group:stick', ''},
-	}
+    output = 'moontest:pick_titanium',
+    recipe = {
+        {'moontest:titanium_ingot', 'moontest:titanium_ingot', 'moontest:titanium_ingot'},
+        {'', 'group:stick', ''},
+        {'', 'group:stick', ''},
+    }
 })
 
 minetest.register_craft({
-	output = 'moontest:shovel_lunarium',
-	recipe = {
-		{'moontest:lunarium_ingot'},
-		{'group:stick'},
-		{'group:stick'},
-	}
+    output = 'moontest:shovel_lunarium',
+    recipe = {
+        {'moontest:lunarium_ingot'},
+        {'group:stick'},
+        {'group:stick'},
+    }
 })
 
 minetest.register_craft({
-	output = 'moontest:shovel_titanium',
-	recipe = {
-		{'moontest:titanium_ingot'},
-		{'group:stick'},
-		{'group:stick'},
-	}
+    output = 'moontest:shovel_titanium',
+    recipe = {
+        {'moontest:titanium_ingot'},
+        {'group:stick'},
+        {'group:stick'},
+    }
 })
 
 minetest.register_craft({
-	output = 'moontest:axe_lunarium',
-	recipe = {
-		{'moontest:lunarium_ingot', 'moontest:lunarium_ingot'},
-		{'moontest:lunarium_ingot', 'group:stick'},
-		{'', 'group:stick'},
-	}
+    output = 'moontest:axe_lunarium',
+    recipe = {
+        {'moontest:lunarium_ingot', 'moontest:lunarium_ingot'},
+        {'moontest:lunarium_ingot', 'group:stick'},
+        {'', 'group:stick'},
+    }
 })
 
 minetest.register_craft({
-	output = 'moontest:axe_titanium',
-	recipe = {
-		{'moontest:titanium_ingot', 'moontest:titanium_ingot'},
-		{'moontest:titanium_ingot', 'group:stick'},
-		{'', 'group:stick'},
-	}
+    output = 'moontest:axe_titanium',
+    recipe = {
+        {'moontest:titanium_ingot', 'moontest:titanium_ingot'},
+        {'moontest:titanium_ingot', 'group:stick'},
+        {'', 'group:stick'},
+    }
 })
 
 minetest.register_craft({
-	output = 'moontest:sword_lunarium',
-	recipe = {
-		{'moontest:lunarium_ingot'},
-		{'moontest:lunarium_ingot'},
-		{'group:stick'},
-	}
+    output = 'moontest:sword_lunarium',
+    recipe = {
+        {'moontest:lunarium_ingot'},
+        {'moontest:lunarium_ingot'},
+        {'group:stick'},
+    }
 })
 
 minetest.register_craft({
-	output = 'moontest:sword_titanium',
-	recipe = {
-		{'moontest:titanium_ingot'},
-		{'moontest:titanium_ingot'},
-		{'group:stick'},
-	}
+    output = 'moontest:sword_titanium',
+    recipe = {
+        {'moontest:titanium_ingot'},
+        {'moontest:titanium_ingot'},
+        {'group:stick'},
+    }
 })
 
 -- Cooking
 
 minetest.register_craft({
-	type = "cooking",
-	output = "default:glass",
-	recipe = "moontest:dust",
+    type = "cooking",
+    output = "default:glass",
+    recipe = "moontest:dust",
 })
 
 minetest.register_craft({
-	type = "cooking",
-	output = "moontest:stone",
-	recipe = "moontest:cobble",
+    type = "cooking",
+    output = "moontest:stone",
+    recipe = "moontest:cobble",
 })
 
 minetest.register_craft({
-	type = "cooking",
-	output = "moontest:titanium_ingot",
-	recipe = "moontest:titanium_lump",
+    type = "cooking",
+    output = "moontest:titanium_ingot",
+    recipe = "moontest:titanium_lump",
 })
 
 minetest.register_craft({
-	type = "cooking",
-	output = "moontest:lunarium_ingot",
-	recipe = "moontest:lunarium_lump",
+    type = "cooking",
+    output = "moontest:lunarium_ingot",
+    recipe = "moontest:lunarium_lump",
 })
 
 minetest.register_craft({
-	type = "fuel",
-	recipe = "default:mese_crystal",
-	burntime = 50,
+    type = "fuel",
+    recipe = "default:mese_crystal",
+    burntime = 50,
 })
 
 minetest.register_craft({
-	type = "fuel",
-	recipe = "moontest:phosphorus_lump",
-	burntime = 50,
+    type = "fuel",
+    recipe = "moontest:phosphorus_lump",
+    burntime = 50,
 })
 
 --new recipe for glue from mesecons to keep compatibility
 minetest.register_craft({
-	output = "mesecons_materials:glue 2",
-	type = "cooking",
-	recipe = "moontest:sapling",
-	cooktime = 2
+    output = "mesecons_materials:glue 2",
+    type = "cooking",
+    recipe = "moontest:sapling",
+    cooktime = 2
 })
