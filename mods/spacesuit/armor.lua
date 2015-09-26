@@ -405,6 +405,21 @@ minetest.register_on_joinplayer(function(player)
     end
 end)
 
+armor.throw_stack = function(pos, stack)
+    local obj = minetest.add_item(pos, stack)
+    if obj then
+        local x = math.random(1, 5)
+        if math.random(1,2) == 1 then
+            x = -x
+        end
+        local z = math.random(1, 5)
+        if math.random(1,2) == 1 then
+            z = -z
+        end
+        obj:setvelocity({x=1/x, y=obj:getvelocity().y, z=1/z})
+    end
+end
+
 if ARMOR_DROP == true or ARMOR_DESTROY == true then
     minetest.register_on_dieplayer(function(player)
         local name = player:get_player_name()
@@ -429,37 +444,34 @@ if ARMOR_DROP == true or ARMOR_DESTROY == true then
                         pos = vector.round(pos)
                         local node = minetest.get_node(pos)
                         if node.name == "bones:bones" then
-                        local meta = minetest.get_meta(pos)
-                        local owner = meta:get_string("owner")
-                        local inv = meta:get_inventory()
-                        if name == owner then
-                            for _,stack in ipairs(drop) do
-                                if inv:room_for_item("main", stack) then
-                                    inv:add_item("main", stack)
+                            local meta = minetest.get_meta(pos)
+                            local owner = meta:get_string("owner")
+                            local inv = meta:get_inventory()
+                            if name == owner then
+                                for _,stack in ipairs(drop) do
+                                    if inv:room_for_item("main", stack) then
+                                        inv:add_item("main", stack)
+                                    else
+                                        armor.throw_stack(pos, stack)
+                                    end
                                 end
+                                return
                             end
                         end
-                    end
-                end)
-            else
-                for _,stack in ipairs(drop) do
-                    local obj = minetest.add_item(pos, stack)
-                    if obj then
-                        local x = math.random(1, 5)
-                        if math.random(1,2) == 1 then
-                            x = -x
+                        -- if it wasn't possible in insert into bone
+                        for _,stack in ipairs(drop) do
+                            armor.throw_stack(pos, stack)
                         end
-                        local z = math.random(1, 5)
-                        if math.random(1,2) == 1 then
-                            z = -z
-                        end
-                        obj:setvelocity({x=1/x, y=obj:getvelocity().y, z=1/z})
+                    end)
+                else
+                    -- if the bone mod doesn't exist
+                    for _,stack in ipairs(drop) do
+                        armor.throw_stack(pos, stack)
                     end
                 end
             end
         end
-    end
-end)
+    end)
 end
 
 minetest.register_globalstep(function(dtime)
