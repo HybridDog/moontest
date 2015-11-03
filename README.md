@@ -1,12 +1,15 @@
 #Moontest
 A game for minetest.
 
+***WARNING: This game hasn't been updated since 0.4.12 or so, use with caution.***
+
 For more information and discussion about this game, see the topic on the [Minetest Forums](https://forum.minetest.net/viewtopic.php?f=9&t=5305).
 
 ##Contributors
 | Contributor      | Contribution   |
 |:----------------:|:--------------:|
 | realtinymonster  | Everything     |
+| UMBERCARIO89     | Code & Textures|
 | Amaz (Amaz1)     | Code & Textures|
 | fishyWET         | Code & Textures|
 | paramat          | Code & Textures|
@@ -19,4 +22,4 @@ For more information and discussion about this game, see the topic on the [Minet
 
 **Installation:** Unzip the file and rename it to "moontest". Then move it to the game directory.
 
-**Download:** https://github.com/realtinymonster/moontest/archive/master.zip
+**Download:** https://github.com/HarpNetStudios/moontest/archive/master.zip
