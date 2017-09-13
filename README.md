@@ -1,4 +1,4 @@
-#Moontest
+###Moontest
 A game for minetest.
 
 ***WARNING: This game hasn't been updated since 0.4.12 or so, use with caution.***
