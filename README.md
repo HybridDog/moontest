@@ -1,11 +1,11 @@
-###Moontest
+### Moontest
 A game for minetest.
 
 ***WARNING: This game hasn't been updated since 0.4.12 or so, use with caution.***
 
 For more information and discussion about this game, see the topic on the [Minetest Forums](https://forum.minetest.net/viewtopic.php?f=9&t=5305).
 
-##Contributors
+## Contributors
 | Contributor      | Contribution   |
 |:----------------:|:--------------:|
 | realtinymonster  | Everything     |
