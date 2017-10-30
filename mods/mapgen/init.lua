@@ -42,7 +42,7 @@ minetest.register_biome({
 	name = "plains",
 	node_top = "moontest:dust",
 	depth_top = 2,
-	y_min = 3,
+	y_min = -18,
 	y_max = 75,
 	heat_point = 50,
 	humidity_point = 50,
@@ -55,7 +55,7 @@ minetest.register_biome({
 	depth_top = 2,
 	node_dust = "moontest:vacuum",
 	y_min = -50,
-	y_max = 5,
+	y_max = -20,
 	heat_point = 75,
 	humidity_point = 25,
 })
@@ -80,6 +80,7 @@ minetest.register_alias("mapgen_stone", "moontest:stone")
 minetest.register_alias("mapgen_dirt", "moontest:dust")
 minetest.register_alias("mapgen_gravel", "moontest:compressed_dust")
 minetest.register_alias("mapgen_water_source", "moontest:vacuum")
+minetest.register_alias("mapgen_river_water_source", "moontest:vacuum")
 -- add these two in case dungeons are enabled
 minetest.register_alias("mapgen_mossycobble", "moontest:cobble")
 minetest.register_alias("mapgen_cobble", "moontest:cobble")

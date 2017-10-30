@@ -99,7 +99,7 @@ minetest.register_node("moontest:leaves", {
 minetest.register_node("moontest:dustprint1", {
     description = "Moon Dust Footprint1",
     tiles = {"moontest_dustprint1.png", "moontest_dust.png"},
-    groups = {crumbly=3, falling_node=1},
+    groups = {crumbly=3, falling_node=1, not_in_creative_inventory=1},
     drop = "moontest:dust",
     sounds = default.node_sound_sand_defaults({
         footstep = {name="default_sand_footstep", gain=0.1},
@@ -109,7 +109,7 @@ minetest.register_node("moontest:dustprint1", {
 minetest.register_node("moontest:dustprint2", {
     description = "Moon Dust Footprint2",
     tiles = {"moontest_dustprint2.png", "moontest_dust.png"},
-    groups = {crumbly=3, falling_node=1},
+    groups = {crumbly=3, falling_node=1, not_in_creative_inventory=1},
     drop = "moontest:dust",
     sounds = default.node_sound_sand_defaults({
         footstep = {name="default_sand_footstep", gain=0.1},
@@ -122,6 +122,7 @@ minetest.register_node("moontest:dustprint2", {
 
 minetest.register_node("moontest:vacuum", {
     description = "Vacuum",
+    groups = {not_in_creative_inventory=1},
     drawtype = "airlike",
     paramtype = "light",
     sunlight_propagates = true,
@@ -134,6 +135,7 @@ minetest.register_node("moontest:vacuum", {
 
 minetest.register_node("moontest:air", {
     description = "Life Support Air",
+    groups = {not_in_creative_inventory=1},
     drawtype = "glasslike",
     tiles = {"moontest_air.png"},
     paramtype = "light",
@@ -146,6 +148,7 @@ minetest.register_node("moontest:air", {
 
 minetest.register_node("moontest:air_shield", {
     description = "Air Shield",
+    groups = {not_in_creative_inventory=1},
     drawtype = "glasslike",
     inventory_image = minetest.inventorycube("moontest_air_shield.png"),
     use_texture_alpha = true,
@@ -290,7 +293,7 @@ minetest.register_node("moontest:hlsource", {
 --
 
 minetest.register_node("moontest:glass", {
-    description = "Glass",
+    description = "Moon Glass",
     drawtype = "glasslike",
     tiles = {"default_obsidian_glass.png"},
     paramtype = "light",

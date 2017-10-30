@@ -43,12 +43,12 @@ end)]]
 
 minetest.register_globalstep(function(dtime)
     for _, player in ipairs(minetest.get_connected_players()) do
-        if math.random() < 0.1 then
+        --if math.random() < 1 then
             if player:get_inventory():contains_item("main", "moontest:spacesuit")
             and player:get_breath() < 11 then
                 player:set_breath(11)
             end
-        end
+        --end
     end
 end)
 
