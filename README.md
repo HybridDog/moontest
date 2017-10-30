@@ -1,15 +1,15 @@
 # Moontest
 A game for minetest.
 
-***WARNING: This game hasn't been updated since 0.4.12 or so, use with caution.***
+***WARNING: This game has only been tested for compatibility with 0.4.13***
 
 For more information and discussion about this game, see the topic on the [Minetest Forums](https://forum.minetest.net/viewtopic.php?f=9&t=5305).
 
 ## Contributors
 | Contributor      | Contribution   |
 |:----------------:|:--------------:|
-| realtinymonster  | Everything     |
-| UMBERCARIO89     | Code & Textures|
+| Yellowberry      | Everything     |
+| sablesable       | Code & Textures|
 | Amaz (Amaz1)     | Code & Textures|
 | fishyWET         | Code & Textures|
 | paramat          | Code & Textures|
